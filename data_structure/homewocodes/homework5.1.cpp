@@ -65,7 +65,7 @@ bool HashTable<T>::Insert(const T &x)
             empty[pos] = false;
             if(LoadFactor() > 0.6)
             {
-                cout << "Rehashing..." << endl;
+                cout << "重新哈希" << endl;
                 int oldSize = size;
                 size *= 2;
                 T *oldHt = ht;
